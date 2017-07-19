@@ -61,12 +61,19 @@ article {
   z-index: 2; }
 
 button {
-  width: 96px;
+  width: auto;
   height: 48px;
-  background-color: Transparent; }
+  background-color: Transparent;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-left: 1px solid #9a9a9a; }
   button h1 {
-    font-size: 1em;
-    color: #003366; }
+    font-size: 1.5em;
+    color: #003366;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 0; }
     button h1:hover {
       color: #0066cc; }
 
@@ -80,7 +87,10 @@ footer {
 header {
   background-color: white;
   width: 100%;
-  min-height: 256px; }
+  min-height: 256px;
+  border-bottom: 1px solid #9a9a9a;
+  border-top: 1px solid #9a9a9a;
+  margin-bottom: 48px; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Roboto", sans-serif; }
@@ -135,7 +145,13 @@ hr {
 
 nav {
   background-color: white;
-  height: 96px; }
+  height: 96px;
+  width: 65%;
+  margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  left: 50%; }
 
 .post {
   min-width: 256px;
