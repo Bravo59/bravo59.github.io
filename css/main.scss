@@ -1,5 +1,7 @@
 // Colors
 $eggshell: #e6e6e6;
+$primary: #d63333;
+$secondary: #003366;
 // Important Shit
 
 
@@ -13,13 +15,17 @@ a:-webkit-any-link {
 }
 #container {
 
-	width: 100%;
-	min-height: 1024px;
-	margin: auto;
+	margin-left: 360px;
+	margin-right: 360px;
+	background-color: lighten($eggshell,10);
+	border-left: 12px solid darken($primary,10);
+	border-right: 12px solid darken($primary,10);
 }
 .container-fluid {
 	width: 100%;
 	display: block;
+	border-right: 24px solid $eggshell;
+	border-left: 24px solid $eggshell;
 }
 .clearfix {
 	&:before, &:after {
@@ -43,9 +49,11 @@ body {min-height: 100%;}
 	display: table;
 }
 .wrapper {
-	padding: 0% 8% 0% 8%;
+	// padding: 0% 8% 0% 8%;
 }
-
+.wrapperx {
+	padding: 0px 32px 0px 32px;
+}
 #content {
 	padding: 2% 0% 2% 0%;
 }
@@ -79,18 +87,22 @@ button {
 	background-color: Transparent;
 	h1 {
 		font-size: 1em;
-		color: $eggshell;
-		
+		color: $secondary;
+		&:hover {
+			color:lighten($secondary, 20);
+		}
 	}
 }
 footer {
-background-color: #d63333;
-width: 100%;	
-height: 128px;
+height: 90px;
+bottom: 0;
+right: 0;
+left: 0;
+background-color: lighten($eggshell,10);
 }
 
 header {
-	background-color: #d63333;
+	background-color: lighten($eggshell, 20);
 	width: 100%;
 	min-height: 256px;
 
@@ -99,13 +111,13 @@ h1,h2,h3,h4,h5 {
 	font-family: "Roboto", sans-serif;
 }
 h1 {
-	color: #d63333;
+	color: $primary;
 	font-size: 2em;
 	font-weight: 500;
 	padding-bottom: 16px;
 	}
 html {
-	background-color: darken($eggshell, 10);
+	background-color: $primary;
 }
 hr {
 	margin-top: 32px;
@@ -140,7 +152,7 @@ hr {
 	position: relative;
 	top: 275px;
 	font-weight: 600;
-	color: #d63333;
+	color: $primary;
 	}
 }
 #latest {
@@ -151,9 +163,8 @@ hr {
 	padding: 0px 0px 16px 0px;
 }
 nav {
-	background-color: #003366;
-	height: 48px;
-	margin-bottom: 32px;
+	background-color: lighten($eggshell,10);
+	height: 96px;
 }
 .post {
 	min-width: 256px;
@@ -161,13 +172,13 @@ nav {
 	min-height: 256px;
 
 	h1 {
-	color: #d63333;
+	color: $primary;
 	font-size: 2em;
 	font-weight: 500;
 	padding-bottom: 16px;
 	}
 	h2 {
-		color: #003366;
+		color: $secondary;
 		font-weight: 600;
 		font-size: 1.5em;
 	padding-bottom: 16px;
@@ -189,7 +200,7 @@ section {
 	border-left: 1px solid darken($eggshell, 20);
 	li {
 		font-family: "Roboto", sans-serif;
-		color: #003366;
+		color: $secondary;
 		padding-bottom: 16px;
 	}
 }
@@ -203,7 +214,7 @@ section {
 
 	}
 	li {
-		color: $eggshell;
+		color: $secondary;
 		margin:auto;
 		float:right;
 		padding-right: 16px;
@@ -211,7 +222,7 @@ section {
 	}
 	i {
 		&:hover {
-			color:darken($eggshell, 20);
+			color:lighten($secondary, 20);
 		}
 	}
 }
