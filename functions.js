@@ -16,9 +16,7 @@ function loadBlog(xml) {
   	x[i].getElementsByTagName("IMAGELINK")[0].childNodes[0].nodeValue +
   	'\" class=\"clearfix\"><img class=\"imgthumb\" src=\"' +
   	x[i].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue +
-  	'\"></a><h2  id="desc">' +
-  	x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + 
-  	'</h2><p>' +
+  	'\"></a><p>' +
   	x[i].getElementsByTagName("TEXT")[0].childNodes[0].nodeValue+ 
   	'</p></div><hr>';
   	 listpost+= '<a href=\"'+
