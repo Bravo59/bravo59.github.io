@@ -8,7 +8,7 @@ function loadBlog(xml) {
   for (i = 0; i <x.length; i++) { 
   	post += '<div class=\"post\"id=\"'+
   	'POST'+[i]+
-	'\" ><h1>' +
+    '\" ><h1>' +
   	x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
   	'</h1><h2 class=\"clearfix\">' +
   	x[i].getElementsByTagName("DATE")[0].childNodes[0].nodeValue +
@@ -19,7 +19,7 @@ function loadBlog(xml) {
   	'\"></a><h2  id="desc">' +
   	x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + 
   	'</h2><p>' +
-  	x[i].getElementsByTagName("TEXT")[0].childNodes[0].nodeValue + 
+  	x[i].getElementsByTagName("TEXT")[0].childNodes[0].nodeValue+ 
   	'</p></div><hr>';
   	 listpost+= '<a href=\"'+
   	 '#POST'+[i]+
