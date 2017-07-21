@@ -19,7 +19,7 @@ function loadBlog(xml) {
   	'\"></a><h2  id="desc">' +
   	x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + 
   	'</h2><p>' +
-  	x[i].getElementsByTagName("TEXT")[0].children + 
+  	x[i].getElementsByTagName("TEXT")[0].getElementsByTagName("p")[0]+ 
   	'</p></div><hr>';
   	 listpost+= '<a href=\"'+
   	 '#POST'+[i]+
