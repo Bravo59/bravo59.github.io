@@ -1,10 +1,10 @@
- <BLOG>
-  	<POSTS>
-<TITLE>Newst Post</TITLE>
-<DESCRIPTION>This is the most recent post</DESCRIPTION>
-<DATE>07/18/2017</DATE>
-<IMAGE>https://pbs.twimg.com/media/DE48ZIlWAAA8FOS.jpg:large</IMAGE>
-<IMAGELINK>https://pbs.twimg.com/media/DE48ZIlWAAA8FOS.jpg:large</IMAGELINK>
+<BLOG>
+<POSTS>
+<TITLE>Blender 3D Model: Son Goku from Dragonball Z</TITLE>
+<DESCRIPTION>Frieza Saga style!</DESCRIPTION>
+<DATE>07/21/2017</DATE>
+<IMAGE>https://pbs.twimg.com/media/DFPIYs_U0AAuE-Y.jpg:large</IMAGE>
+<IMAGELINK>https://pbs.twimg.com/media/DFPIYs_U0AAuE-Y.jpg:large</IMAGELINK>
 <TEXT>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget erat vitae ante commodo egestas. Aliquam et malesuada urna, at aliquet arcu. Nunc imperdiet tincidunt nibh, vel vehicula tortor elementum et. Suspendisse ligula justo, vestibulum a ornare fringilla, sagittis ac turpis. Donec molestie consectetur purus, eu facilisis sem dignissim non. Maecenas elementum ornare ante, aliquam vehicula tellus aliquam vitae. Duis ac pretium velit, non ornare nunc. Praesent ante justo, auctor in urna vel, sodales faucibus elit. Etiam efficitur consequat maximus. Nunc aliquam quis ligula sed dictum. Aenean commodo viverra tellus in vulputate. Aenean sit amet fermentum sem, at laoreet nisl. Cras nunc est, eleifend et odio in, posuere congue neque. Fusce laoreet egestas tincidunt.
 </TEXT>
 </POSTS>
