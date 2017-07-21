@@ -18,9 +18,9 @@ function loadBlog(xml) {
   	x[i].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue +
   	'\"></a><h2  id="desc">' +
   	x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + 
-  	'</h2>' +
+  	'</h2><p>' +
   	x[i].getElementsByTagName("TEXT")[0].childNodes[0].nodeValue + 
-  	'</div><hr>';
+  	'</p></div><hr>';
   	 listpost+= '<a href=\"'+
   	 '#POST'+[i]+
   	 '\"><li>'+
@@ -33,19 +33,14 @@ function loadBlog(xml) {
   document.getElementById("postloc").innerHTML = post;
   document.getElementById("list").innerHTML = listpost;
   for (i =0; i < 1; i++) {
-
-    lastpost += '<a href=\"'+
-    '#POST'+[i]+
-    '\"><div id="latest" class="latest"><h1>'+x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue+'</h1><h2>' +
-    x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue +
-    '</h2></div></a><hr>';
-    document.getElementById("latestloc").innerHTML = lastpost;
-    $('#latest').css('background-image', 'url("' + x[i].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue + '")');
+  lastpost += '<a href=\"'+
+  '#POST'+[i]+
+  '\"><div id="latest" class="latest"><h1>'+x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue+'</h1><h2>' +
+  x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue +
+  '</h2></div></a><hr>';
+  document.getElementById("latestloc").innerHTML = lastpost;
+  $('#latest').css('background-image', 'url("' + x[i].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue + '")');
   }
-  $('body').html($('body').html().replace(/sp]\\*/g,"<p>"));
-  $('body').html($('body').html().replace(/ep]\\*/g,"</p>"));
-  $('body').html($('body').html().replace(/sa]\\*/g,"<a"));
-  $('body').html($('body').html().replace(/ea]\\*/g,"</a>"));
 }
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
