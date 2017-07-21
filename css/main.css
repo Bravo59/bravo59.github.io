@@ -11,7 +11,7 @@ $secondary: #003366;
 }
 a:-webkit-any-link {
 	text-decoration: none;
-	color: lighten($primary,10);
+	color: $primary;
 }
 #container {
 
