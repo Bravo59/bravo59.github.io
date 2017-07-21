@@ -33,7 +33,7 @@ function loadBlog(xml) {
   for (i =0; i < 1; i++) {
   lastpost += '<a href=\"'+
   '#POST'+[i]+
-  '\"><div id="latest" class="latest"><h1>'+x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue+'</h1></div></a><hr>';
+  '\"><div id="latest" class="latest"><h1>Latest:'+x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue+'</h1></div></a><hr>';
   document.getElementById("latestloc").innerHTML = lastpost;
   $('#latest').css('background-image', 'url("' + x[i].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue + '")');
   }
