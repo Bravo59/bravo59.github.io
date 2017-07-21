@@ -44,7 +44,7 @@ function loadBlog(xml) {
   }
   $('body').html($('body').html().replace(/sp]\\*/g,"<p>"));
   $('body').html($('body').html().replace(/ep]\\*/g,"</p>"));
-  $('body').html($('body').html().replace(/sa]\\*/g,"<a>"));
+  $('body').html($('body').html().replace(/sa]\\*/g,"<a"));
   $('body').html($('body').html().replace(/ea]\\*/g,"</a>"));
 }
 function loadDoc() {
