@@ -41,8 +41,8 @@ function loadBlog(xml) {
   document.getElementById("latestloc").innerHTML = lastpost;
   $('#latest').css('background-image', 'url("' + x[i].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue + '")');
   }
-  $("body").html($("body").html().replace(/[p]/g,'<p>'));
-  $("body").html($("body").html().replace(/[/p]/g,'</p>'));
+  $("body").html($("body").html().replace(/\\[p\\]/g,'<p>'));
+  $("body").html($("body").html().replace(/\\[\p\\]/g,'</p>'));
 }
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
