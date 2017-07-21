@@ -66,9 +66,11 @@ body {min-height: 100%;}
 }
 #gallery {
 	display: none;
-
+	img {
+		padding-right: 32px;
+		margin-left: 48px;
+	}
 	&li {
-		padding-right: 48px;
 	}
 	.row {
 		padding-bottom: 48px;

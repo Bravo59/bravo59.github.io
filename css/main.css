@@ -52,8 +52,9 @@ body {
 
 #gallery {
   display: none; }
-  #galleryli {
-    padding-right: 48px; }
+  #gallery img {
+    padding-right: 32px;
+    margin-left: 48px; }
   #gallery .row {
     padding-bottom: 48px; }
 
