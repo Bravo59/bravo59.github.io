@@ -1,13 +1,5 @@
 <BLOG>
-<POSTS>
-<TITLE>Blender 3D Model: Son Goku from Dragonball Z</TITLE>
-<DESCRIPTION>Frieza Saga style!</DESCRIPTION>
-<DATE>07/26/2017</DATE>
-<IMAGE>https://pbs.twimg.com/media/DFoT8XoWAAA7Q85.jpg</IMAGE>
-<IMAGELINK>https://pbs.twimg.com/media/DFoT8XoWAAA7Q85.jpg</IMAGELINK>
-<TEXT><![CDATA[<p>Goku has hands and his upper body is rigged now. He also has mouth internals. However I need to do some cleaning up of his armature weights and redo his armbands. Its coming along very nicely! Follow the progress here <a href="https://twitter.com/BoomR59" alt="Link to my Twitter">@BoomR59</a></p>]]>
-</TEXT>
-</POSTS>
+
 <POSTS>
 <TITLE>Blender 3d Model: Son Goku from Dragonball Z Update</TITLE>
 <DESCRIPTION>Facial posing and hands</DESCRIPTION>
