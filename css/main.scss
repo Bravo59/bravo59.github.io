@@ -2,6 +2,7 @@
 $eggshell: #e6e6e6;
 $primary: #d63333;
 $secondary: #003366;
+$tertiary: mix($primary, $secondary);
 // Important Shit
 
 
@@ -11,7 +12,7 @@ $secondary: #003366;
 }
 a:-webkit-any-link {
 	text-decoration: none;
-	color:inherit;
+	color: lighten($tertiary, 10);
 }
 #container {
 
